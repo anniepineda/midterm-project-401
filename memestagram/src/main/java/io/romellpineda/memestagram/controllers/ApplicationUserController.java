@@ -51,16 +51,21 @@ public class ApplicationUserController {
         Authentication authentication = new UsernamePasswordAuthenticationToken(newUser, null, new ArrayList<>());
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
-        return new RedirectView("/userprofile");
+        return new RedirectView("/logged");
     }
 
+    @GetMapping("/developers")
+    public String showdevelopers(){
 
+        return "developers";
+    }
 
     @GetMapping("/login")
-    public String showLoginForm(){
-
+    public String showlogin(){
         return "login";
     }
+
+
 
     @GetMapping("/users/{id}")
     public String showUserDetails(@PathVariable long id, Principal p, Model m){
