@@ -5,17 +5,21 @@ import io.romellpineda.memestagram.models.ApplicationUserRepository;
 
 import io.romellpineda.memestagram.models.MemeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.request.WebRequest;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 import org.springframework.web.servlet.view.RedirectView;
 
+import javax.print.attribute.standard.PresentationDirection;
 import java.security.Principal;
 import java.util.ArrayList;
 
@@ -46,6 +50,13 @@ public class ApplicationUserController {
         return "developers";
     }
 
+    @GetMapping("/signout")
+    public String signout(){
+
+        return "signout";
+    }
+
+
 
     @GetMapping("/signup")
     public String signUp() {
@@ -57,6 +68,7 @@ public class ApplicationUserController {
 
     @PostMapping("/join")
     public RedirectView createNewApplicationUser(String username, String password, String profilePicture, String bio, String firstName){
+
         ApplicationUser newUser = new ApplicationUser(username, passwordEncoder.encode(password), profilePicture, bio, firstName);
         applicationUserRepository.save(newUser);
 
@@ -64,6 +76,11 @@ public class ApplicationUserController {
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
         return new RedirectView("/userprofile");
+    }
+
+    @PostMapping("/loggingout")
+    public RedirectView loggedout(){
+        return new RedirectView("logout");
     }
 
 
@@ -98,5 +115,7 @@ public class ApplicationUserController {
             return new RedirectView("/login");
         }
     }
+
+
 
 }
