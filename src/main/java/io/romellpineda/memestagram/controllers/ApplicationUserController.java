@@ -2,7 +2,6 @@ package io.romellpineda.memestagram.controllers;
 
 import io.romellpineda.memestagram.models.ApplicationUser;
 import io.romellpineda.memestagram.models.ApplicationUserRepository;
-
 import io.romellpineda.memestagram.models.MemeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
