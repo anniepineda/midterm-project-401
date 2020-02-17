@@ -1,0 +1,39 @@
+package ApplicationUserControllerTests;
+
+import io.romellpineda.memestagram.models.ApplicationUser;
+import org.junit.jupiter.api.Test;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.view.RedirectView;
+
+
+class ApplicationUserControllerTests {
+
+    @Test
+    void newFirstName() {
+        ApplicationUser actual = new ApplicationUser("username", "password", "profilePicture", "bio", "firstName");
+        assertEquals("UserSample", actual.getFirstName());
+    }
+
+    private void assertEquals(String userSample, String firstName) {
+    }
+
+
+    @Test
+    void newUserName() {
+        ApplicationUser actual = new ApplicationUser("Gomezzz", "password", "profilePicture", "bio", "firstName");
+        assertEquals("Gomezzz", actual.getUsername());
+    }
+
+
+    @Test
+    void newBio() {
+        ApplicationUser actual = new ApplicationUser("username", "password", "profilePicture", "Hi my name is Jennifer, I like cookies", "firstName");
+        assertEquals("Hi my name is Jennifer, I like cookies", actual.getBio());
+    }
+
+
+
+}
+
+
+

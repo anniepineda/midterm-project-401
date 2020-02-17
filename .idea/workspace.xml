@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50264c48-a525-497d-8d8b-ffac7094b484" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApplicationUserControllerTests/fiveTests" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/memeControllerTests/memeTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/romellpineda/memestagram/controllers/MemeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/romellpineda/memestagram/controllers/MemeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/romellpineda/memestagram/models/ApplicationUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/romellpineda/memestagram/models/ApplicationUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,35 +26,19 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="memestagram" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="memestagram" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="memestagram" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="memestagram" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,9 +55,15 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager" selected="Application.MemestagramApplication">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.fiveTest">
     <configuration name="MemestagramApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <envs>
         <env name="a" value="s3.amazonaws.com" />
@@ -110,12 +103,34 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="fiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;fiveTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.MemestagramApplication" />
       <item itemvalue="Gradle.MemestagramApplicationTests" />
+      <item itemvalue="Gradle.fiveTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.fiveTest" />
         <item itemvalue="Gradle.MemestagramApplicationTests" />
       </list>
     </recent_temporary>
@@ -138,10 +153,18 @@
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state x="178" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.812@0.23.1440.812" timestamp="1580946056587" />
+    <state x="1935" y="371" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581919139493">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1935" y="371" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.801/1440.23.1920.1057@1440.23.1920.1057" timestamp="1581919139493" />
     <state x="533" y="136" key="#com.intellij.ide.util.MemberChooser" timestamp="1581024307831">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state x="533" y="136" key="#com.intellij.ide.util.MemberChooser/0.23.1440.811@0.23.1440.811" timestamp="1581024307831" />
+    <state x="2177" y="394" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581918904589">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2177" y="394" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.801/1440.23.1920.1057@1440.23.1920.1057" timestamp="1581918904589" />
     <state x="474" y="201" width="796" height="456" key="EnvironmentVariablesDialog" timestamp="1580946054763">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
@@ -174,5 +197,25 @@
     <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1581031515491" />
     <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1580949151829" />
     <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1581021428952" />
+    <state x="1875" y="393" key="com.intellij.ide.util.TipDialog" timestamp="1581918190927">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1875" y="393" key="com.intellij.ide.util.TipDialog/0.23.1440.801/1440.23.1920.1057@1440.23.1920.1057" timestamp="1581918190927" />
+    <state x="1985" y="240" width="670" height="676" key="search.everywhere.popup" timestamp="1581921980423">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1985" y="240" width="670" height="676" key="search.everywhere.popup/0.23.1440.804/1440.23.1920.1057@1440.23.1920.1057" timestamp="1581921980423" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/io/romellpineda/memestagram/controllers/ApplicationUserController.java</url>
+          <line>27</line>
+          <properties field="memeRepository" class="io.romellpineda.memestagram.controllers.ApplicationUserController" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

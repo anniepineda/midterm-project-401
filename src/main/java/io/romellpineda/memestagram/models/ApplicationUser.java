@@ -33,7 +33,7 @@ public class ApplicationUser implements UserDetails {
     public List<ApplicationUser> following;
 
 
-    public ApplicationUser() {
+    public ApplicationUser(String username, String password, String profilePicture) {
     }
 
 

@@ -33,7 +33,7 @@ public class MemeController {
     private AmazonClient amazonClient;
 
     @Autowired
-    MemeController(AmazonClient amazonClient) {
+    public MemeController(AmazonClient amazonClient) {
         this.amazonClient = amazonClient;
     }
 
