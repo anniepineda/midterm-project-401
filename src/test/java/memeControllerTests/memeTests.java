@@ -16,13 +16,25 @@ import java.io.IOException;
 import java.net.URL;
 import java.security.Principal;
 
-public class memeControllerTests {
+class memeControllerTests {
 
+    MemeController meme;
+    @BeforeEach
+    public void setMemeController(){
+        ApplicationUser applicationUser = null;
+        AmazonClient amazonClient = null;
+        meme = new MemeController(null);
+    }
+
+    @Test
+    void newControllerUser(){ assertEquals();
+
+    }
+
+    private void assertEquals() {
+    }
 
 }
 
 
-//    @PostMapping("/generator")
-//    public RedirectView generateMeme(String linkMeme, String textToAdd, String name, Model m, Principal p) throws IOException {
-//        final BufferedImage image = ImageIO.read(new URL(linkMeme));
-//        if (image == null) {
+

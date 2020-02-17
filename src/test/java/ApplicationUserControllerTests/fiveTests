@@ -31,6 +31,18 @@ class ApplicationUserControllerTests {
         assertEquals("Hi my name is Jennifer, I like cookies", actual.getBio());
     }
 
+    @Test
+    void newUserPassword(){
+        login("username", "password");
+    }
+
+    @Test
+    void newUserPasswordTwo(){
+        login("username","password");
+    }
+
+    private void login(String username, String password) {
+    }
 
 
 }
